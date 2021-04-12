@@ -4,18 +4,40 @@
     <head>
         <meta name="author" content="El Mehdi Oudaoud">
         <title>El Mehdi Oudaoud| Toolkit </title>
-        <link rel="stylesheet" href="/Styles/style.css">
-        <link rel="stylesheet" href="/Styles/style sec1.css">
-        <link rel="stylesheet" href="/Styles/style sec2.css">
-        <link rel="icon" href="/Styles/Images/Icon.png">
-        <link rel="stylesheet" href="/Styles/fontawesome/css/all.min.css">
+        <link rel="icon" href="Icon.png">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            .coral a:hover i{
+                color:coral; /*Need an animation here from 0 to left*/
+            }
+            .bg{
+                background-image: url("top-side.png");
+                background-size: cover;
+            }
+            .bis{
+                background-color: coral;   
+            }
+            .col ul li a:hover{
+                background-color: coral;
+            }
+            .more a:hover{
+              color:coral;
+            }
+            @media only screen and (max-width: 749px) {
+                /* For mobile phones: */
+                .Table ul{
+                  grid-template-columns: repeat(1, 1fr) !important;
+                }
+              }
+        </style>
     </head>
 
    <body>
         <section class='topside bg'>
                 <nav class='navigation col'>
                         <ul>
-                            <li><a href="/">Home</a> </li>
+                            <li><a href="index.html">Home</a> </li>
                             <li><a href="projects.html">Projects</a> </li>
                             <li id="toogle"><a href="toolkit.html">ToolKit</a></li>
                             
@@ -23,7 +45,7 @@
                         </ul>
                 </nav>
                 <div class='OD'>
-                    <img src="Styles/Images/icon.png" alt="Logo" class="Logo">
+                    <img src="icon.png" alt="Logo" class="Logo">
                 </div>
 
                 <div class='go-back-button coral'>
@@ -52,7 +74,7 @@
                 <div class='Table lipad'>
                     <ul>
                         <li>
-                            <img src="styles/Images/pythont.png" alt="python" class='icon'>
+                            <img src="pythont.png" alt="python" class='icon'>
                             <h1 class='head1'>Python</h1>
                             <p class='text3 more'>  This programming language is by far my favourite. 
 I can use it to make secure logging systems, UI , 
@@ -65,15 +87,15 @@ I’ve used : <a href="https://www.djangoproject.com/" target="_blank">Django</a
 
                         </li>
                         <li>
-                            <img src="styles/Images/html5.png" alt="html5" class='icon'>
-                            <h1 class='head2'>HTML</h1>
+                            <img src="html5.png" alt="html5" class='icon'>
+                            <h1 class='head1'>HTML</h1>
                             <p class="text3 more">Knows how to use most the old tags, as well as  
 the new ones that handle multimedia and graphical
 content. I'm also familliar with DOM and APIs.</p>
                         </li>
                         <li>
-                            <img src="styles/Images/css3.png" alt="css3" class='icon'>
-                            <h1 class='head3'>CSS</h1>
+                            <img src="css3.png" alt="css3" class='icon'>
+                            <h1 class='head1'>CSS</h1>
                             <p class="text3b more">  Can use Vanilla CSS (in fact this portfolio is entirely
 made with Vanila CSS). But depending on cases can 
 make good looking websites using a combination of 
@@ -82,7 +104,7 @@ I'm currently learning about responsive websites,
 SASS and Skeleton.</p>
                         </li>
                         <li>
-                            <img src="styles/Images/javascript.png" alt="javascript" class='icon'>
+                            <img src="javascript.png" alt="javascript" class='icon'>
                             <h1 class='head1'>JavaScript</h1>
                             <p class='text3 more'>Good with DOM manipulation and familliar with back-end caching asynchrounous programing multi-threading testing performance check and more
                                 . I 'm familliar with rameworks such as <a href="https://tailwindcss.com/" target="_blank">Node.js</a>,
@@ -93,20 +115,6 @@ SASS and Skeleton.</p>
                     </ul>
                 </div>
             </div>
-            <div class="education">
-                    <div class='text'>
-                        <h1 class="head">General skillset</h1>
-                        <div class='divider-left'></div>
-                    </div>
-                    <!-- <div class='text3a'>
-                        <p>Curently a Software Engineer Freshman at ENSIAS</p>
-                        <div class='right-img'>
-                            <a href="http://ensias.um5.ac.ma/" target="_blank">
-                                <img src="styles/Images/Ensias3.jpg" alt="Ens" class="ensias-img">
-                            </a>
-                        </div>
-                    </div> -->
-                </div>
         </section>
         <script>
             let k =document.querySelector('#toogle');
